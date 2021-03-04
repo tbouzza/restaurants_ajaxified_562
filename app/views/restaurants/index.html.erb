@@ -6,6 +6,7 @@
       <div class="col-12">
         <%= link_to restaurant_path(restaurant) do %>
           <h2><%= restaurant.name %></h2>
+          <%= link_to "Delete", restaurant, method: :delete, remote: true %>
         <% end %>
       </div>
     <% end %>
